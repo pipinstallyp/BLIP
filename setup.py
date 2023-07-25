@@ -4,7 +4,7 @@ from pip._internal.req import parse_requirements
 requirements = [
     ir.requirement for ir in parse_requirements(
         'requirements.txt',
-        session='test')]
+        session=False)]
 
 setup(
     name='blip-vit',
